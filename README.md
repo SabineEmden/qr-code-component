@@ -77,6 +77,12 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 **Note: Delete this note and the content within this section and replace with your own learnings.**
 
+#### Self-hosting custom web fonts
+
+The font family for this project is [Outfit](https://fonts.google.com/specimen/Outfit). It is available as a variable font with weight as the variable axis. I opted to use static fonts. The project uses only two font weights, regular 400 and bold 700. The gain in performance from using the variable font would be minimal at best.
+
+I used the [Font Subsetter](https://everythingfonts.com/subsetter) by Everything Fonts select only the Basic Latin glyphs within the Unicode range U+0020 to U+007E. These 95 glyphs are usually enough for English-only websites. To convert the TTF file format to WOOF and WOOF2, I used the [ttf to woff converter](https://everythingfonts.com/ttf-to-woff) and the [ttf to woff2 converter](https://everythingfonts.com/ttf-to-woff2), both also by Everything Fonts. This reduced the file size from 55kb each for the two original TTF files to 18kb each for the TTF subsets, 11kb for the WOFF subsets, and 9kb for the WOFF subsets.
+
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
@@ -85,10 +91,12 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+#### Self-hosting custom web fonts
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Self-hosting fonts explained (including Google fonts) // @font-face tutorial](https://www.youtube.com/watch?v=zK-yy6C2Nck) by Kevin Powell - This 16-minute video explains the basics of self-hosting custom web fonts. It covers getting fonts from Google fonts, converting from TTF to WOFF and WOFF2, adding fonts to a project, and setting up the font-face declaration in CSS.
+- [A guide to subsetting fonts](https://the-sustainable.dev/a-guide-to-subsetting-fonts/) by sustainable.dev - This article is a brief step-by-step guide to subsetting web fonts with FontSquirrel's Webfont Generator.
+- [Webfont Generator](https://www.fontsquirrel.com/tools/webfont-generator) by Font Squirrel - The Expert option offers fine-grained controls for subsetting fonts and converting the font format in one go, and works with more than one file at a time. It is much more convenient than Everything Fonts. Unfortunately, it didn't work with the original TTF font files I had.
+- [How to load web fonts for the best page load performance](https://the-sustainable.dev/how-to-load-web-fonts-for-the-best-page-load-performance/) by sustainable.dev - This article give detailed instructions how to pre-load font files, use the correct font-face declaration, and avoid invisible text during font loading.
 
 ## Author
 
