@@ -37,6 +37,36 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+/* Base styles */
+@font-face {
+  font-family: "Outfit";
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/Outfit-Regular-subset.woff2") format("woff2"),
+    url("./fonts/Outfit-Regular-subset.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Outfit";
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/Outfit-Bold-subset.woff2") format("woff2"),
+    url("./fonts/Outfit-Bold-subset.woff") format("woff");
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100svh;
+  padding: 32px;
+}
+
+main {
+  flex-grow: 1;
+}
 
 /* Footer */
 .attribution {
