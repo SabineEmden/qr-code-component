@@ -23,9 +23,9 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- GitHub repository: https://sabineemden.github.io/qr-code-component/
-- Live Site URL: https://sabineemden.github.io/qr-code-component/
+- [Frontend Mentor solution](https://www.frontendmentor.io/solutions/qr-code-component-with-self-hosted-web-fonts-C8ISRDsyd1)
+- [GitHub repository](https://sabineemden.github.io/qr-code-component/)
+- [Live Site](https://sabineemden.github.io/qr-code-component/)
 
 ## My process
 
