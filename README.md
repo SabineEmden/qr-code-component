@@ -101,6 +101,8 @@ I want to continue focusing on sustainable web development in future projects an
 
 - Frontend Mentor - [@SabineEmden](https://www.frontendmentor.io/profile/SabineEmden)
 
-## Acknowledgments
+## Acknowledgements
 
 This project uses Josh Comeau's [CSS reset](https://www.joshwcomeau.com/css/custom-css-reset/).
+
+I want to thank [Kagan MacTane](https://mastodon.online/@kagan@wandering.shop) for the very thorough code review he gave me after I posted a link to my solution on Mastodon.
