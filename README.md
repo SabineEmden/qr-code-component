@@ -42,25 +42,26 @@ The font family for this project is [Outfit](https://fonts.google.com/specimen/O
 
 I used the [Font Subsetter](https://everythingfonts.com/subsetter) by Everything Fonts to select only Basic Latin glyphs within the Unicode range U+0020 to U+007E. These 85 glyphs are usually enough for English-only websites. Subsetting the fonts reduced the file size from 55kb each for the two original TTF files to 18kb each for the TTF subsets.
 
-To convert the TTF file format to WOOF and WOOF2, I used the [ttf to woff converter](https://everythingfonts.com/ttf-to-woff) and the [ttf to woff2 converter](https://everythingfonts.com/ttf-to-woff2), both by Everything Fonts. The file conversions further reduced the file size to 11kb for the WOFF subsets, and 9kb for the WOFF2 subsets.
+To convert the TTF file format to WOFF and WOFF2, I used the [ttf to woff converter](https://everythingfonts.com/ttf-to-woff) and the [ttf to woff2 converter](https://everythingfonts.com/ttf-to-woff2), both by Everything Fonts. The file conversions further reduced the file size to 11kb for the WOFF subsets, and 9kb for the WOFF2 subsets.
 
-In the `@font-face` declarations in the CSS style sheet, I listed the WOOF2 files followed by the WOOF files. Browsers will go down the list until they find a file they can use.
+In the `@font-face` declarations in the CSS style sheet, I listed the WOFF2 files followed by the WOFF files. Browsers will go down the list until they find a file they can use.
 
 ```css
 @font-face {
   font-family: "Outfit";
   font-weight: 400;
   font-display: swap;
-  src: url("./fonts/Outfit-Regular-subset.woff2") format("woff2"),
-    url("./fonts/Outfit-Regular-subset.woff") format("woff");
+  src: url("./fonts/Outfit-Regular-subset.woff2") format("woff2"), url("./fonts/Outfit-Regular-subset.woff")
+      format("woff");
 }
 
 @font-face {
   font-family: "Outfit";
   font-weight: 700;
   font-display: swap;
-  src: url("./fonts/Outfit-Bold-subset.woff2") format("woff2"),
-    url("./fonts/Outfit-Bold-subset.woff") format("woff");
+  src: url("./fonts/Outfit-Bold-subset.woff2") format("woff2"), url("./fonts/Outfit-Bold-subset.woff")
+      format("woff");
+}
 ```
 
 I decided not to include the `local()` function in the font-face declaration to look for local font files. The probability for Outfit to be installed as a local font on the user's device is rather small.
