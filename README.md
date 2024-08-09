@@ -29,6 +29,14 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ## My process
 
+The challenge for this project was to get QR code component looking as close to the design as possible, based on the following assets:
+
+- Figma design files
+- Mobile & desktop layouts
+- Style guide with colors and fonts
+- Optimized image assets
+- HTML file with pre-written contents
+
 ### Built with
 
 - Semantic HTML5 markup
